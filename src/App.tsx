@@ -1,17 +1,16 @@
 import React from 'react';
-import { ThemeProvider } from './contexts/ThemeContext';
-import { ThemeToggle } from './components/ThemeToggle';
-import './styles/theme.css';
+import DashboardLogo from './components/DashboardLogo';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <ThemeProvider>
-      <div className="App">
-        <ThemeToggle />
-        {/* Rest of your app content */}
-      </div>
-    </ThemeProvider>
+    <div className="app">
+      <header className="app-header">
+        <DashboardLogo />
+        <h1>Dashboard</h1>
+      </header>
+      {/* Rest of dashboard content */}
+    </div>
   );
-}
+};
 
 export default App;
