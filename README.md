@@ -1,6 +1,6 @@
 # Minizal
 
-A sample React application built with Vite to enter user feedback. Enter user feedback in [minizal.vercel.app](minizal.vercel.app) to create PRs and see the aggregated feedback here [feedback-to-code.vercel.app](feedback-to-code.vercel.app)!
+A sample React application built with Vite to enter user feedback. Enter user feedback in [minizal.vercel.app](https://minizal.vercel.app/) to create PRs and see the aggregated feedback here [feedback-to-code.vercel.app](https://feedback-to-code.vercel.app/)!
 
 ## Getting Started
 
