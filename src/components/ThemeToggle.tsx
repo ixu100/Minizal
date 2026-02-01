@@ -1,16 +1,22 @@
 import React from 'react';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../theme/ThemeContext';
 
 export const ThemeToggle: React.FC = () => {
-  const { isDarkMode, toggleTheme } = useTheme();
+  const { theme, toggleTheme } = useTheme();
 
   return (
-    <button
+    <button 
       onClick={toggleTheme}
-      className="theme-toggle"
-      aria-label="Toggle dark mode"
+      style={{
+        padding: '8px 16px',
+        borderRadius: '4px',
+        border: 'none',
+        cursor: 'pointer',
+        backgroundColor: 'var(--button-bg)',
+        color: 'var(--button-text)'
+      }}
     >
-      {isDarkMode ? '🌙' : '☀️'}
+      {theme === 'light' ? '🌙' : '☀️'} Toggle Theme
     </button>
   );
 };
