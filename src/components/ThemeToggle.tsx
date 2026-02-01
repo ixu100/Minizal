@@ -10,7 +10,7 @@ export const ThemeToggle: React.FC = () => {
       className="theme-toggle"
       aria-label="Toggle dark mode"
     >
-      {isDarkMode ? '☀️ Light' : '🌙 Dark'}
+      {isDarkMode ? '🌙' : '☀️'}
     </button>
   );
 };
