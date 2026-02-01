@@ -1,0 +1,299 @@
+:root {
+  color-scheme: light;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #1f1f1f;
+  background-color: #f6f6f6;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #f6f6f6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+.header {
+  background: #ffffff;
+  border-bottom: 1px solid #e2e2e2;
+}
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-mark {
+  width: 42px;
+  height: 42px;
+  border-radius: 10px;
+  background: #1f1f1f;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.brand-name {
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+.brand-tagline {
+  font-size: 0.85rem;
+  color: #5d5d5d;
+}
+
+.nav {
+  display: flex;
+  gap: 18px;
+  font-size: 0.95rem;
+  color: #3f3f3f;
+}
+
+.hero {
+  padding: 60px 0 40px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 32px;
+  align-items: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  color: #6c6c6c;
+  margin-bottom: 16px;
+}
+
+h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 16px;
+}
+
+.lead {
+  font-size: 1rem;
+  color: #4b4b4b;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+button {
+  padding: 10px 18px;
+  border-radius: 6px;
+  border: 1px solid #1f1f1f;
+  background: #1f1f1f;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+button.secondary {
+  background: #ffffff;
+  color: #1f1f1f;
+}
+
+.subtle {
+  font-size: 0.85rem;
+  color: #6d6d6d;
+}
+
+.panel {
+  background: #ffffff;
+  border: 1px solid #e4e4e4;
+  border-radius: 12px;
+  padding: 24px;
+  display: grid;
+  gap: 12px;
+}
+
+.panel ul {
+  list-style: none;
+  display: grid;
+  gap: 8px;
+  color: #3b3b3b;
+}
+
+.divider {
+  height: 1px;
+  background: #e4e4e4;
+}
+
+.small {
+  font-size: 0.85rem;
+  color: #6d6d6d;
+}
+
+.section {
+  padding: 56px 0;
+}
+
+.section.muted {
+  background: #ffffff;
+  border-top: 1px solid #e8e8e8;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.section-header {
+  margin-bottom: 28px;
+  display: grid;
+  gap: 8px;
+}
+
+.section-header p {
+  color: #5f5f5f;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 18px;
+  display: grid;
+  gap: 10px;
+}
+
+.card p {
+  color: #5a5a5a;
+  line-height: 1.5;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 18px;
+}
+
+.stat {
+  background: #f6f6f6;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 18px;
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.stat-label {
+  color: #5d5d5d;
+  font-size: 0.9rem;
+}
+
+.step-index {
+  font-size: 0.8rem;
+  color: #6b6b6b;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 28px;
+  align-items: start;
+}
+
+.contact-info {
+  margin-top: 16px;
+  display: grid;
+  gap: 6px;
+  color: #5a5a5a;
+}
+
+.form {
+  display: grid;
+  gap: 14px;
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.form label {
+  display: grid;
+  gap: 6px;
+  font-size: 0.9rem;
+}
+
+input,
+textarea {
+  border: 1px solid #d8d8d8;
+  border-radius: 6px;
+  padding: 10px 12px;
+  background: #ffffff;
+}
+
+.footer {
+  margin-top: auto;
+  background: #1f1f1f;
+  color: #f0f0f0;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.footer-links {
+  display: flex;
+  gap: 16px;
+  font-size: 0.9rem;
+  color: #cfcfcf;
+}
