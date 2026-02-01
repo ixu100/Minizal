@@ -12,7 +12,7 @@ export const ThemeProvider: React.FC<{children: React.ReactNode}> = ({ children 
 
   const toggleTheme = () => {
     setIsDarkMode(!isDarkMode);
-    document.body.classList.toggle('dark-mode');
+    document.documentElement.setAttribute('data-theme', !isDarkMode ? 'dark' : 'light');
   };
 
   return (
