@@ -40,9 +40,9 @@ export default function App() {
       <header className="header">
         <div className="container header-row">
           <div className="brand">
-            <span className="brand-mark">S</span>
+            <span className="brand-mark">M</span>
             <div>
-              <p className="brand-name">SlopApp</p>
+              <p className="brand-name">Minizal</p>
               <p className="brand-tagline">A basic UI with a few features</p>
             </div>
           </div>
@@ -146,7 +146,7 @@ export default function App() {
                 Use this simple form to capture name, email, and a short note.
               </p>
               <div className="contact-info">
-                <p>hello@slopapp.local</p>
+                <p>hello@minizal.local</p>
                 <p>Mon–Fri, 9am–5pm</p>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function App() {
 
       <footer className="footer">
         <div className="container footer-row">
-          <p>© 2026 SlopApp</p>
+          <p>© 2026 Minizal</p>
           <div className="footer-links">
             <a href="#features">Features</a>
             <a href="#stats">Stats</a>
