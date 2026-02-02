@@ -1,26 +1,19 @@
-:root {
-  --bg-color: #ffffff;
-  --text-color: #000000;
-  --primary-color: #007bff;
+:root[data-theme='light'] {
+  --background: #ffffff;
+  --text: #000000;
+  --button-bg: #f0f0f0;
+  --button-text: #000000;
 }
 
-[data-theme='dark'] {
-  --bg-color: #1a1a1a;
-  --text-color: #ffffff;
-  --primary-color: #4dabf7;
+:root[data-theme='dark'] {
+  --background: #1a1a1a;
+  --text: #ffffff;
+  --button-bg: #333333;
+  --button-text: #ffffff;
 }
 
 body {
-  background-color: var(--bg-color);
-  color: var(--text-color);
+  background-color: var(--background);
+  color: var(--text);
   transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.theme-toggle {
-  padding: 8px;
-  border-radius: 50%;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-size: 1.2rem;
 }
